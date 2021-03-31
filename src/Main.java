@@ -6,7 +6,6 @@ public class Main {
         System.out.println("Hello");
         System.out.println("Dragos Bogdan Dumitras");
         System.out.println(3+3);
-        float myFloat = 12312344.123F;
         System.out.println(234/11f);
         System.out.print("Rezultatul operatiei a. este:");
         System.out.println(-5+8*6);
