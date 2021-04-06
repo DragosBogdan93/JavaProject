@@ -1,14 +1,59 @@
 package lab2.AnimalRescue;
 
 public class Dog {
-    String name = "Azor";
-    int age = 5;
-    static int levelOfHealth = 5;
-    int feelingHungry = 6;
-    int moodLevel = 4;
-    String favoriteFood = "Steak";
-    String favoriteActivity = "Walking in the Park";
+    private String name;
+    private int age;
+    private static int levelOfHealth;
+    private int feelingHungry;
+    private int moodLevel;
+    private String favoriteFood;
+    private String favoriteActivity;
 
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public int getLevelOfHealth() {
+        return levelOfHealth;
+    }
+   public void setLevelOfHealth(int levelOfHealth) {
+        this.levelOfHealth = levelOfHealth;
+   }
+
+   public int getFeelingHungry() {
+        return feelingHungry;
+   }
+   public void setFeelingHungry(int feelingHungry) {
+        this.feelingHungry = feelingHungry;
+   }
+   public int getMoodLevel() {
+        return moodLevel;
+   }
+   public void setMoodLevel(int moodLevel) {
+        this.moodLevel = moodLevel;
+   }
+   public String getFavoriteFood() {
+        return favoriteFood;
+   }
+   public void setFavoriteFood(String favoriteFood) {
+        this.favoriteFood = favoriteFood;
+   }
+   public String getFavoriteActivity() {
+        return favoriteActivity;
+   }
+   public void setFavoriteActivity(String favoriteActivity){
+        this.favoriteActivity = favoriteActivity;
+   }
     public void bark() {
         System.out.println("Ham Ham!");
     }
@@ -23,7 +68,7 @@ public class Dog {
         System.out.println("I slept well and the mood level is: " + moodLevel);
     }
 
-    public static void health(int value) {
+    public void health(int value) {
         int health = levelOfHealth;
         System.out.println(health);
     }

@@ -1,9 +1,24 @@
 package lab2.AnimalRescue;
 
 public class RecreationActivity {
-    String nameRecreation = "Playing with the ball";
-    String nameRecreation1 = "Running";
-    float distance;
+    private String nameRecreation;
+    private float distance;
+
+    public String getName() {
+        return nameRecreation;
+    }
+
+    public void setName(String nameProduct) {
+        this.nameRecreation = nameProduct;
+    }
+
+    public float getDistance() {
+        return distance;
+    }
+
+    public void setDistance(float distance) {
+        this.distance = distance;
+    }
 
     public void playing(int value) {
         int playing = value;

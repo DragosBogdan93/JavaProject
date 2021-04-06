@@ -1,3 +1,5 @@
+import lab3.Calculator;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,27 +22,28 @@ public class Main {
 
         printHello();
         printMyName();
-        int i = lab2.Main.sum(3,3);
+        Calculator calculate = new Calculator();
+        int i = calculate.sum(3,3);
         System.out.println("Rezultatul adunarii este: " +  i);
-        float j = lab2.Main.division(234,11);
+        float j = calculate.division(234,11);
         System.out.println("Rezultatul impartirii este: " + j);
         int x = -5;
-        int y = lab2.Main.multiplication(8,6);
+        int y = calculate.multiplication(8,6);
         int z = x + y;
         System.out.println("Rezultatul operatiei a. este: " + z);
-        int a = lab2.Main.sum(55,9);
-        int b = lab2.Main.mod(a,9);
+        int a = calculate.sum(55,9);
+        int b = calculate.mod(a,9);
         System.out.println("Rezultatul operatiei b. este: " + b);
         int c = 20;
-        int d = lab2.Main.multiplication(-3,5);
-        float e = lab2.Main.division(-15,8);
+        int d = calculate.multiplication(-3,5);
+        float e = calculate.division(-15,8);
         float f = c + e;
         System.out.println("Rezultatul operatiei c. este: " + f);
         int g = 5;
-        float h = lab2.Main.division(15,3);
-        float k = lab2.Main.multiplication1(h,2);
-        int l = lab2.Main.mod(8,3);
-        float Result = lab2.Main.equation(g,k,l);
+        float h = calculate.division(15,3);
+        float k = calculate.multiplication1(h,2);
+        int l = calculate.mod(8,3);
+        float Result = calculate.equation(g,k,l);
         System.out.println("Rezultatul operatiei d. este: " + Result);
     }
     public static void printHello() {
