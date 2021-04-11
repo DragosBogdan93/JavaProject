@@ -3,8 +3,6 @@ package lab2.AnimalRescue;
 import lab3.Calculator;
 
 public class MedicalStaff {
-    Calculator calculate = new Calculator();
-    Dog azor = new Dog();
     private String name;
     private String specialization;
     private int experienceInYears;
@@ -32,13 +30,8 @@ public class MedicalStaff {
     public void setExperienceInYears(int experienceInYears) {
         this.experienceInYears = experienceInYears;
     }
-
     public void talk() {
         System.out.println("Hello, how can I help you?");
     }
 
-    public void treatment(int value) {
-        int newlevelOfHealth = calculate.sum(value, azor.getLevelOfHealth());
-        System.out.println("The new level of health is: " + newlevelOfHealth);
-    }
 }
