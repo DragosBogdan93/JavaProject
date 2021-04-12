@@ -256,6 +256,7 @@ public class LogicalOp {
         }
         return sum / count;
     }
+
     public float getAverageFromIntervalDivisible(int first, int second) {
 
         float sum = 0;
@@ -264,13 +265,14 @@ public class LogicalOp {
         while (i <= second) {
             if (i % 7 == 0) {
                 sum += i;
-            count++;
+                count++;
             }
             i++;
         }
-            return sum / count;
+        return sum / count;
     }
-    public void  printFibonacci (int maxLenght) {
+
+    public void printFibonacci(int maxLenght) {
         int i = 0;
         int y = 1;
         int count = 0;
@@ -281,6 +283,58 @@ public class LogicalOp {
             y = nextNumber;
             count++;
         }
+    }
+
+    public void wozaCozaLoza() {
+
+        int i = 1;
+
+        while (i <= 110) {
+
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaLozaWoza ");
+
+            } else if (i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("WozaLoza ");
+
+            } else if (i % 3 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaWoza ");
+
+            } else if (i % 3 == 0 && i % 5 == 0) {
+
+                System.out.print("CozaLoza ");
+
+            } else if (i % 7 == 0) {
+
+                System.out.print("Woza ");
+
+            } else if (i % 5 == 0) {
+
+                System.out.print("Loza ");
+
+            } else if (i % 3 == 0) {
+
+                System.out.print("Coza ");
+
+            } else {
+
+                System.out.print(i + " ");
+
+            }
+
+            if (i % 11 == 0) {
+
+                System.out.println();
+
+            }
+
+            i++;
+
+        }
+
     }
 
 }

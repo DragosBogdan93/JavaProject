@@ -20,6 +20,7 @@ public class Main {
         System.out.println("Have you the right to vote: " + youCanVote);
         int biggestNumber = op.getHigherNumber(23,34,124);
         System.out.println("The bigger number is: " + biggestNumber);
+        op.wozaCozaLoza();
 
 
     }
