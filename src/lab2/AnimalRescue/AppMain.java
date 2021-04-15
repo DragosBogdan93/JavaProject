@@ -58,5 +58,18 @@ public class AppMain {
         System.out.println("deoarece in stock mai erau doar " + food.getStockProduct() + " bucati. Apoi am mers in parc si ne-am jucat cu " + azor.getName() + " " + recreation.getNameRecreation() + " iar apoi am alergat " + fitness.getDistance() + " metri.");
 
 
+        Cat tommy = new Cat();
+        Wolf jack = new Wolf();
+        Nurse emilia = new Nurse();
+        tommy.speak();
+        tommy.eat();
+        azor.speak();
+        azor.eat();
+        jack.speak();
+        jack.eat();
+        emilia.talk();
+
+
+
     }
 }

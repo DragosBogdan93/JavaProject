@@ -10,4 +10,14 @@ public class Dog extends Animal {
     public void setFur(String fur) {
         this.fur = fur;
     }
+
+    @Override
+    public void speak() {
+        System.out.println("Ham Ham !");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Eating Pedigree");
+    }
 }

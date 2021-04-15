@@ -41,7 +41,7 @@ public class Main {
         System.out.println("Rezultatul operatiei c. este: " + f);
         int g = 5;
         float h = calculate.division(15,3);
-        float k = calculate.multiplication1(h,2);
+        float k = calculate.multiplication(h,2);
         int l = calculate.mod(8,3);
         float Result = calculate.equation(g,k,l);
         System.out.println("Rezultatul operatiei d. este: " + Result);

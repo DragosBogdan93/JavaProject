@@ -35,37 +35,77 @@ public class Calculator {
         int sum = first + second;
         return sum;
     }
-    public int substract(int first, int second) {
+    public float sum(float first, float second) {
+        float sum = first + second;
+        return sum;
+    }
+    public int sum (int first, int second, int third) {
+        int sum = first + second + third;
+        return sum;
+    }
+     public int substract(int first, int second) {
         int substract = first - second;
+        return substract;
+    }
+    public int substract(int first, int second, int third) {
+        int substract = first - second - third;
+        return substract;
+    }
+    public float substract(float first, float second, float third) {
+        float substract = first - second - third;
         return substract;
     }
     public int multiplication(int first, int second) {
         int multiplication = first * second;
         return multiplication;
     }
-    public float multiplication1(float first, float second) {
-        float multiplication1 = first * second;
-        return multiplication1;
+    public float multiplication(float first, float second) {
+        float multiplication = first * second;
+        return multiplication;
+    }
+    public float multiplication(float first, float second, float third) {
+        float multiplication = first * second * third;
+        return multiplication;
     }
     public float division(float first, float second) {
         float division = first / second;
         return division;
     }
+    public float division(float first, float second, float third) {
+        float division = first / second / third;
+        return division;
+    }
+        public float division(float first, float second, float third, float fourth) {
+            float division = first / second / third / fourth;
+            return division;
+    }
     public int mod(int first, int second) {
         int mod = first % second;
+        return mod;
+    }
+    public int mod(int first, int second, int third) {
+        int mod = first % second % third;
+        return mod;
+    }
+    public double mod(double first, double second, double third) {
+        double mod = first % second % third;
         return mod;
     }
     public float equation(float first, float second, float third) {
         float equation = first + second - third;
         return equation;
     }
-    public int equation1(int first, int second, int third) {
-        int equation1 = first + second + third;
-        return equation1;
+    public int equation(int first, int second, int third) {
+        int equation = first + second + third;
+        return equation;
+    }
+    public float equation(float first, int second, int third) {
+        float equation = first + second * third;
+        return equation;
     }
     public float gradeFahrenheit(int first) {
         int gradeFahrenheit = substract(first, 32);
-        return multiplication1(division(5, 9), gradeFahrenheit);
+        return multiplication(division(5, 9), gradeFahrenheit);
     }
     public float distanceInch(float first) {
         float distanceInch = first;
@@ -74,17 +114,17 @@ public class Calculator {
         return distanceMeter;
     }
     public float mps() {
-        float timeSeconds = (multiplication1(hr, 3600) + multiplication1(min, 60) + sec);
+        float timeSeconds = (multiplication(hr, 3600) + multiplication(min, 60) + sec);
         float mps = division(distance, timeSeconds);
         return mps;
     }
     public float kph() {
-        float timeSeconds = (multiplication1(hr, 3600) + multiplication1(min, 60) + sec);
+        float timeSeconds = (multiplication(hr, 3600) + multiplication(min, 60) + sec);
         float kph = division(division(distance, 1000.0f), division(timeSeconds, 3600.0f));
         return kph;
     }
     public float mph() {
-        float timeSeconds = (multiplication1(hr, 3600) + multiplication1(min, 60) + sec);
+        float timeSeconds = (multiplication(hr, 3600) + multiplication(min, 60) + sec);
         float kph = division(division(distance, 1000.0f), division(timeSeconds, 3600.0f));
         float mph = division(kph, 1.609f);
         return mph;

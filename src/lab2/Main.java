@@ -19,9 +19,9 @@ public class Main {
         System.out.println("Rezultatul adunarii este: " + calculate.sum(23, 123));
         System.out.println("Rezultatul scaderii este: " + calculate.substract(65, 33));
         System.out.println("Rezultatul ecuatiei este: " + calculate.equation(45, 34, 55));
-        System.out.println("Rezultatul inmultirii este: " + calculate.multiplication1(45, 4));
+        System.out.println("Rezultatul inmultirii este: " + calculate.multiplication(45, 4));
         printModel();
-        System.out.println("Media a trei numere este: " + calculate.division(calculate.equation1(12, 23, 21), 3));
+        System.out.println("Media a trei numere este: " + calculate.division(calculate.equation(12, 23, 21), 3));
         printDrawing();
         System.out.println("Temperatura in grade Celsius este " + calculate.gradeFahrenheit(33));
         System.out.println("Distanta in metrii este: " + calculate.distanceInch(222));

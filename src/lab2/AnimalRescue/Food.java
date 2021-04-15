@@ -58,12 +58,12 @@ public class Food {
     }
 
     public void totalWeight(float value) {
-        float totalWeight = calculate.multiplication1(weightProduct, value);
+        float totalWeight = calculate.multiplication(weightProduct, value);
         System.out.println("The total weight is: " + totalWeight + "kg");
     }
 
     public float totalPrice(float value) {
-        float totalPrice = calculate.multiplication1(priceProduct, value);
+        float totalPrice = calculate.multiplication(priceProduct, value);
         System.out.println("The total payment to be paid is: " + totalPrice + " Euro");
         return totalPrice;
     }

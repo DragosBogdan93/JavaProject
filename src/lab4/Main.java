@@ -23,6 +23,7 @@ public class Main {
         System.out.println(op.getAverageFromIntervalWhile(111,8899));
         System.out.println(op.getAverageFromIntervalDivisible(23,123));
         op.printFibonacci(20);
+        op.wozaCozaLoza();
 
 
 

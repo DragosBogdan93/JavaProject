@@ -337,5 +337,51 @@ public class LogicalOp {
 
     }
 
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    public void setArray(int[] array, int maxValue) {
+        for (int i = 0; i < maxValue; i++) {
+            array[i] = i + 1;
+        }
+    }
+
+    public void getEvenNumberArray(int[] array, int maxValue) {
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 != 0) {
+                System.out.println(array[i]);
+            }
+        }
+    }
+
+    public float getAverageFromArray(int[] array) {
+        float sum = 0f;
+        for (int i = 0; i < array.length; i++) {
+            sum = array[i] + sum;
+        }
+        float average = sum / array.length;
+        return average;
+    }
+
+    public boolean isInArray(String[] array, String text) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(text)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void isNumberInArray(int[] array, int number) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
+                System.out.println("That number was found at index: " + i);
+            }
+        }
+    }
 }
+
 
