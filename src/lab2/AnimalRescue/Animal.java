@@ -1,6 +1,6 @@
 package lab2.AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private String color;
@@ -13,7 +13,7 @@ public class Animal {
     private String favoriteActivity;
     private boolean isMale;
 
-    public String getName() {
+    public  String getName() {
         return name;
     }
 
@@ -101,17 +101,9 @@ public class Animal {
         isMale = male;
     }
 
-    public void eat() {
-        System.out.println("Eating");
-    }
-    public void speak() {
-        System.out.println("Speaking");
-    }
-    public void run() {
-        System.out.println("Running");
-    }
-    public void sleep() {
-        System.out.println("Zzzzzzz");
-    }
+    public abstract void eat();
+    public abstract void speak();
+    public abstract void run();
+    public abstract void sleep();
 
 }

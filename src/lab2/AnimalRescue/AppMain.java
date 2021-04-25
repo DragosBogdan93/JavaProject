@@ -2,7 +2,7 @@ package lab2.AnimalRescue;
 
 public class AppMain {
     public static void main(String[] args) {
-        Dog azor = new Dog();
+        Dog azor = new Husky();
         azor.setName("Azor");
         azor.setAge(2);
         azor.setFavoriteActivity("plimbe in parc");
@@ -58,8 +58,8 @@ public class AppMain {
         System.out.println("deoarece in stock mai erau doar " + food.getStockProduct() + " bucati. Apoi am mers in parc si ne-am jucat cu " + azor.getName() + " " + recreation.getNameRecreation() + " iar apoi am alergat " + fitness.getDistance() + " metri.");
 
 
-        Cat tommy = new Cat();
-        Wolf jack = new Wolf();
+        Cat tommy = new ScottishFold();
+        Wolf jack = new GreyWolf();
         Nurse emilia = new Nurse();
         tommy.speak();
         tommy.eat();
@@ -68,6 +68,26 @@ public class AppMain {
         jack.speak();
         jack.eat();
         emilia.talk();
+
+        System.out.println();
+        System.out.println("Rezolvarea temei laboratorului 6");
+        Dog sully = new Husky();
+        Wolf johny = new Coyote();
+        sully.speak();
+        tommy.eat();
+        tommy.speak();
+        sully.run();
+        tommy.run();
+        sully.eat();
+        sully.sleep();
+        tommy.sleep();
+        jack.sleep();
+        jack.speak();
+        johny.speak();
+        johny.sleep();
+        johny.run();
+        johny.eat();
+
 
 
 

@@ -4,7 +4,7 @@ import lab3.Calculator;
 
 public class Veterinarian extends MedicalStaff {
     Calculator calculate = new Calculator();
-    Dog azor = new Dog();
+    Dog azor = new Husky();
 
     public void treatment(int value) {
         int newlevelOfHealth = calculate.sum(value, azor.getLevelOfHealth());

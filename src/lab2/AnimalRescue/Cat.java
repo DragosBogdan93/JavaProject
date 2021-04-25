@@ -1,6 +1,6 @@
 package lab2.AnimalRescue;
 
-public class Cat extends Animal {
+public abstract  class Cat extends Animal {
     private boolean fur;
 
     public boolean hasFur() {
@@ -15,13 +15,7 @@ public class Cat extends Animal {
         System.out.println("Purring");
     }
 
-    @Override
-    public void speak() {
-        System.out.println("Miauuuu");
-    }
 
-    @Override
-    public void eat() {
-        System.out.println("Eating milk !");
-    }
+
+
 }

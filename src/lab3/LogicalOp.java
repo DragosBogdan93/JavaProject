@@ -1,5 +1,7 @@
 package lab3;
 
+import java.util.List;
+
 public class LogicalOp {
 
 
@@ -382,6 +384,45 @@ public class LogicalOp {
             }
         }
     }
-}
+    public void printList (List<String> myList) {
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+    }
+    public void addParameterToList (List<String> myList, String parameter){
+        myList.add(parameter);
+    }
+    public void printFromToAList (List<String> myList, int index) {
+        for (int i = index; i < myList.size();i++) {
+            System.out.println(myList.get(i));
+        }
+    }
+    public void printReverseAList (List<String> myList) {
+        for (int i = myList.size() - 1; i >= 0;i-- ){
+            System.out.println(myList.get(i));
+        }
+    }
+    public void addValueToIndex (List<String> myList, int index, String parameter) {
+        myList.add(myList.set(index,parameter));
+    }
+    public void setValueToList (List<String> myList, String parameter) {
+        myList.add(myList.set(0,parameter));
+    }
+    public void printValueOfIndex (List<String> myList) {
+        for(int i= 0; i< myList.size();i++) {
+            System.out.println("On the position " + i + " value is " + myList.get(i) );
+        }
+    }
+    public int printBiggestNumberList (List<Integer> myList) {
+        int maxValue = 0;
+        for (int i = 0; i < myList.size(); i++) {
+            if (myList.get(i) > maxValue) {
+                maxValue = myList.get(i);
+            }
+        }
+        return maxValue;
+    }
+    }
+
 
 
